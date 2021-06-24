@@ -1,0 +1,34 @@
+{
+  "name": "mgatner/adminlte4",
+  "description": "AdminLTE - Bootstrap 5 Admin Dashboard",
+  "homepage": "https://adminlte.io/",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "responsive",
+    "back-end",
+    "template",
+    "theme",
+    "web",
+    "admin"
+  ],
+  "authors": [
+    {
+      "name": "Colorlib"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "almasaeed2010/adminlte": "dev-v4-dev"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ColorlibHQ/AdminLTE"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ColorlibHQ/AdminLTE/issues"
+  }
+}
