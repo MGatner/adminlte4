@@ -11,3 +11,8 @@ Version 4 is under development in Bootstrap 5; visit the `v4-dev` branch for cod
 Because there are no releases to track this repository will be versioned by the commit
 used to generate the distributables from the `v4-dev` branch. See **composer.lock** for
 the actual commit reference.
+
+## Screenshots
+
+![Screenshot](https://github.com/mgatner/adminlte4/blob/develop/screenshot1.png)
+![Screenshot](https://github.com/mgatner/adminlte4/blob/develop/screenshot2.png)
