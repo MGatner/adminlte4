@@ -3,14 +3,18 @@
 <!-- For RTL verison -->
 <!-- <html lang="en" dir="rtl"> -->
   <head>
-    <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title>AdminLTE 4 | Fixed Sidebar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="title" content="AdminLTE 4 | Fixed Sidebar">
+<meta name="author" content="ColorlibHQ">
+<meta name="description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+<meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
 <!-- By adding ../../css/dark/adminlte-dark-addon.css then the page supports both dark color schemes, and the page author prefers / default is light. -->
 <meta name="color-scheme" content="light dark">
 <!-- By adding ../../css/dark/adminlte-dark-addon.css then the page supports both dark color schemes, and the page author prefers / default is dark. -->
 <!-- <meta name="color-scheme" content="dark light"> -->
-<title>AdminLTE 4 | Fixed Sidebar</title>
 <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 <!-- Font Awesome -->
@@ -39,10 +43,10 @@
       <li class="nav-item">
         <a class="nav-link" data-lte-toggle="sidebar-full" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none d-md-block">
         <a href="#" class="nav-link">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item d-none d-md-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
@@ -67,7 +71,7 @@
             <!-- Message Start -->
             <div class="d-flex">
               <div class="flex-shrink-0">
-                <img src="../../assets/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 img-circle me-3">
+                <img src="../../assets/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle me-3">
               </div>
               <div class="flex-grow-1">
                 <h3 class="dropdown-item-title">
@@ -85,7 +89,7 @@
             <!-- Message Start -->
             <div class="d-flex">
               <div class="flex-shrink-0">
-                <img src="../../assets/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 img-circle me-3">
+                <img src="../../assets/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle me-3">
               </div>
               <div class="flex-grow-1">
                 <h3 class="dropdown-item-title">
@@ -102,7 +106,9 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="d-flex">
-              <img src="../../assets/img/AdminLTELogo.png" alt="User Avatar" class="img-size-50 img-circle me-3">
+              <div class="flex-shrink-0">
+                <img src="../../assets/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle me-3">
+              </div>
               <div class="flex-grow-1">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -147,13 +153,13 @@
       </li>
       <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-          <img src="../../assets/img/AdminLTELogo.png" class="user-image img-circle shadow" alt="User Image">
+          <img src="../../assets/img/user2-160x160.jpg" class="user-image img-circle shadow" alt="User Image">
           <span class="d-none d-md-inline">Alexander Pierce</span>
         </a>
         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
           <!-- User image -->
           <li class="user-header bg-primary">
-            <img src="../../assets/img/AdminLTELogo.png" class="img-circle shadow" alt="User Image">
+            <img src="../../assets/img/user2-160x160.jpg" class="img-circle shadow" alt="User Image">
 
             <p>
               Alexander Pierce - Web Developer
@@ -162,7 +168,7 @@
           </li>
           <!-- Menu Body -->
           <li class="user-body">
-            <div class="row">
+            <section class="row">
               <div class="col-4 text-center">
                 <a href="#">Followers</a>
               </div>
@@ -172,7 +178,7 @@
               <div class="col-4 text-center">
                 <a href="#">Friends</a>
               </div>
-            </div>
+            </section>
             <!-- /.row -->
           </li>
           <!-- Menu Footer-->
@@ -201,11 +207,11 @@
       <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-bg-dark sidebar-color-primary shadow">
   <div class="brand-container">
-    <a href="javascript:void(0)" class="brand-link">
+    <a href="javascript:;" class="brand-link">
       <img src="../../assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-80 shadow">
       <span class="brand-text fw-light">AdminLTE 4</span>
     </a>
-    <a class="pushmenu mx-1" data-lte-toggle="sidebar-mini" href="javascript:void(0)" role="button"><i class="fas fa-angle-double-left"></i></a>
+    <a class="pushmenu mx-1" data-lte-toggle="sidebar-mini" href="javascript:;" role="button"><i class="fas fa-angle-double-left"></i></a>
   </div>
   <!-- Sidebar -->
   <div class="sidebar">
@@ -213,7 +219,7 @@
       <!-- Sidebar Menu -->
       <ul class="nav nav-pills nav-sidebar flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
         <li class="nav-item ">
-          <a href="javascript:void(0)" class="nav-link ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Dashboard
@@ -241,17 +247,38 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="../../pages/widgets.html" class="nav-link ">
+        <li class="nav-item ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Widgets
-              <span class="end badge bg-danger">New</span>
+              <i class="end fas fa-angle-left"></i>
             </p>
           </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../../pages/widgets/small-box.html" class="nav-link ">
+                <i class="nav-icon far fa-circle"></i>
+                <p>Small Box</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/widgets/info-box.html" class="nav-link ">
+                <i class="nav-icon far fa-circle"></i>
+                <p>info Box</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/widgets/cards.html" class="nav-link ">
+                <i class="nav-icon far fa-circle"></i>
+                <p>Cards</p>
+              </a>
+            </li>
+          </ul>
         </li>
+
         <li class="nav-item menu-open">
-          <a href="javascript:void(0)" class="nav-link active">
+          <a href="javascript:;" class="nav-link active">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Layout Options
@@ -269,7 +296,7 @@
           </ul>
         </li>
         <li class="nav-item ">
-          <a href="javascript:void(0)" class="nav-link ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Forms
@@ -286,7 +313,7 @@
           </ul>
         </li>
         <li class="nav-item ">
-          <a href="javascript:void(0)" class="nav-link ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Tables
@@ -304,13 +331,13 @@
         </li>
         <li class="nav-header">MULTI LEVEL EXAMPLE</li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon fas fa-circle"></i>
             <p>Level 1</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Level 1
@@ -319,13 +346,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
+              <a href="javascript:;" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>Level 2</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
+              <a href="javascript:;" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>
                   Level 2
@@ -334,19 +361,19 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="javascript:void(0)" class="nav-link">
+                  <a href="javascript:;" class="nav-link">
                     <i class="nav-icon far fa-dot-circle"></i>
                     <p>Level 3</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="javascript:void(0)" class="nav-link">
+                  <a href="javascript:;" class="nav-link">
                     <i class="nav-icon far fa-dot-circle"></i>
                     <p>Level 3</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="javascript:void(0)" class="nav-link">
+                  <a href="javascript:;" class="nav-link">
                     <i class="nav-icon far fa-dot-circle"></i>
                     <p>Level 3</p>
                   </a>
@@ -354,7 +381,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
+              <a href="javascript:;" class="nav-link">
                 <i class="nav-icon far fa-circle"></i>
                 <p>Level 2</p>
               </a>
@@ -362,26 +389,26 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon fas fa-circle"></i>
             <p>Level 1</p>
           </a>
         </li>
         <li class="nav-header">LABELS</li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon far fa-circle text-danger"></i>
             <p class="text">Important</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon far fa-circle text-warning"></i>
             <p>Warning</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link">
+          <a href="javascript:;" class="nav-link">
             <i class="nav-icon far fa-circle text-info"></i>
             <p>Informational</p>
           </a>
@@ -393,27 +420,26 @@
 </aside>
 
       <!-- Main content -->
-      <div class="content-wrapper">
+      <main class="content-wrapper">
         <div class="content-header">
-  <div class="container-fluid">
-    <div class="row mb-2">
-      <div class="col-sm-6">
-        <div class="fs-3">Fixed Layout</div>
-      </div>
-      <div class="col-sm-6">
-        <ol class="breadcrumb float-sm-end">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Fixed Layout</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</div>
-
+          <div class="container-fluid">
+            <section class="row mb-2">
+              <div class="col-sm-6">
+                <div class="fs-3">Fixed Layout</div>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Fixed Layout</li>
+                </ol>
+              </div>
+            </section>
+          </div>
+        </div>
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <div class="row">
+            <section class="row">
               <div class="col-12">
                 <!-- Default box -->
                 <div class="card">
@@ -440,12 +466,12 @@
                 </div>
                 <!-- /.card -->
               </div>
-            </div>
+            </section>
             <!-- /.row -->
           </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->
-      </div>
+      </main>
       <!-- /.content-wrapper -->
 
       <!-- Main Footer -->

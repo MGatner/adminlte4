@@ -5,9 +5,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>AdminLTE 4 | General Form Elements</title>
+<title>AdminLTE 4 | Widgets - Cards</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="title" content="AdminLTE 4 | General Form Elements">
+<meta name="title" content="AdminLTE 4 | Widgets - Cards">
 <meta name="author" content="ColorlibHQ">
 <meta name="description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
 <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
@@ -247,8 +247,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item ">
-          <a href="javascript:;" class="nav-link ">
+        <li class="nav-item menu-open">
+          <a href="javascript:;" class="nav-link active">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Widgets
@@ -269,7 +269,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="../../pages/widgets/cards.html" class="nav-link ">
+              <a href="../../pages/widgets/cards.html" class="nav-link active">
                 <i class="nav-icon far fa-circle"></i>
                 <p>Cards</p>
               </a>
@@ -295,8 +295,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item menu-open">
-          <a href="javascript:;" class="nav-link active">
+        <li class="nav-item ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Forms
@@ -305,7 +305,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../../pages/forms/general.html" class="nav-link active">
+              <a href="../../pages/forms/general.html" class="nav-link ">
                 <i class="nav-icon far fa-circle"></i>
                 <p>General Elements</p>
               </a>
@@ -425,12 +425,12 @@
           <div class="container-fluid">
             <section class="row mb-2">
               <div class="col-sm-6">
-                <div class="fs-3">General Form</div>
+                <div class="fs-3">Cards</div>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">General Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">Cards</li>
                 </ol>
               </div>
             </section>
@@ -439,43 +439,89 @@
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <section class="row g-4">
-              <!-- Start column -->
-              <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="card card-primary card-outline">
+            <h4 class="mb-2 mt-4">Cards</h4>
+            <h5 class="mb-2">Abilities</h5>
+            <section class="row">
+              <div class="col-md-3">
+                <div class="card card-primary collapsed-card">
                   <div class="card-header">
-                    <div class="card-title">
-                      Quick Example
+                    <h3 class="card-title">Expandable</h3>
+
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse"><i class="fas fa-plus"></i>
+                      </button>
                     </div>
+                    <!-- /.card-tools -->
                   </div>
-                  <form>
-                    <div class="card-body">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                    </div>
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    The body of the card
+                  </div>
+                  <!-- /.card-body -->
                 </div>
                 <!-- /.card -->
               </div>
+              <!-- /.col -->
+              <div class="col-md-3">
+                <div class="card card-success">
+                  <div class="card-header">
+                    <h3 class="card-title">Collapsable</h3>
+
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-collapse"><i class="fas fa-minus"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    The body of the card
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-3">
+                <div class="card card-warning">
+                  <div class="card-header">
+                    <h3 class="card-title">Removable</h3>
+
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-dismiss="card-remove"><i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    The body of the card
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-3">
+                <div class="card card-danger">
+                  <div class="card-header">
+                    <h3 class="card-title">Maximizable</h3>
+
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool" data-lte-toggle="card-maximize"><i class="fas fa-expand"></i>
+                      </button>
+                    </div>
+                    <!-- /.card-tools -->
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    The body of the card
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.col -->
             </section>
             <!-- /.row -->
           </div><!-- /.container-fluid -->
