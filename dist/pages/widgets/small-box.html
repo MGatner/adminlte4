@@ -5,9 +5,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>AdminLTE 4 | General Form Elements</title>
+<title>AdminLTE 4 | Widgets - Small Box</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="title" content="AdminLTE 4 | General Form Elements">
+<meta name="title" content="AdminLTE 4 | Widgets - Small Box">
 <meta name="author" content="ColorlibHQ">
 <meta name="description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
 <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
@@ -32,6 +32,7 @@
 <!-- overlayScrollbars -->
 <link rel="stylesheet" href="../../vendor/overlayScrollbars/css/OverlayScrollbars.min.css">
 
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   </head>
   <body class="layout-fixed">
     <div class="wrapper">
@@ -247,8 +248,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item ">
-          <a href="javascript:;" class="nav-link ">
+        <li class="nav-item menu-open">
+          <a href="javascript:;" class="nav-link active">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Widgets
@@ -257,7 +258,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../../pages/widgets/small-box.html" class="nav-link ">
+              <a href="../../pages/widgets/small-box.html" class="nav-link active">
                 <i class="nav-icon far fa-circle"></i>
                 <p>Small Box</p>
               </a>
@@ -295,8 +296,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item menu-open">
-          <a href="javascript:;" class="nav-link active">
+        <li class="nav-item ">
+          <a href="javascript:;" class="nav-link ">
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Forms
@@ -305,7 +306,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../../pages/forms/general.html" class="nav-link active">
+              <a href="../../pages/forms/general.html" class="nav-link ">
                 <i class="nav-icon far fa-circle"></i>
                 <p>General Elements</p>
               </a>
@@ -425,12 +426,12 @@
           <div class="container-fluid">
             <section class="row mb-2">
               <div class="col-sm-6">
-                <div class="fs-3">General Form</div>
+                <div class="fs-3">Small Box</div>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">General Form</li>
+                  <li class="breadcrumb-item active" aria-current="page">Small Box</li>
                 </ol>
               </div>
             </section>
@@ -439,43 +440,69 @@
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <section class="row g-4">
-              <!-- Start column -->
-              <div class="col-md-6">
-                <!-- general form elements -->
-                <div class="card card-primary card-outline">
-                  <div class="card-header">
-                    <div class="card-title">
-                      Quick Example
-                    </div>
+            <!-- Small Box (Stat card) -->
+            <h5 class="mb-2">Small Box</h5>
+            <section class="row">
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-primary">
+                  <div class="inner">
+                    <h3>150</h3>
+
+                    <p>New Orders</p>
                   </div>
-                  <form>
-                    <div class="card-body">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                    </div>
-                    <div class="card-footer">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
+                  <div class="icon">
+                    <i class="inner-icon ion ion-bag"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
-                <!-- /.card -->
               </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>53<sup class="fs-5">%</sup></h3>
+
+                    <p>Bounce Rate</p>
+                  </div>
+                  <div class="icon">
+                    <i class="inner-icon ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                  <div class="inner">
+                    <h3>44</h3>
+
+                    <p>User Registrations</p>
+                  </div>
+                  <div class="icon">
+                    <i class="inner-icon ion ion-person-add"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3>65</h3>
+
+                    <p>Unique Visitors</p>
+                  </div>
+                  <div class="icon">
+                    <i class="inner-icon ion ion-pie-graph"></i>
+                  </div>
+                  <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!-- ./col -->
             </section>
             <!-- /.row -->
           </div><!-- /.container-fluid -->
