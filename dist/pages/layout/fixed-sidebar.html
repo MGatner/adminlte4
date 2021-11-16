@@ -15,10 +15,20 @@
 <meta name="color-scheme" content="light dark">
 <!-- By adding ../../css/dark/adminlte-dark-addon.css then the page supports both dark color schemes, and the page author prefers / default is dark. -->
 <!-- <meta name="color-scheme" content="dark light"> -->
+
+<!-- OPTIONAL LINKS -->
+
 <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+<!-- overlayScrollbars -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css" integrity="sha256-WKijf8KI68sbq8Znd6yMepIuFF0wdWfIt6gk3JWcQfk=" crossorigin="anonymous">
+
 <!-- Font Awesome -->
-<link rel="stylesheet" href="../../vendor/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+
+<!-- REQUIRED LINKS -->
+
 <!-- Theme style -->
 <link rel="stylesheet" href="../../css/adminlte.css">
 
@@ -28,9 +38,6 @@
 <!-- For dark mode use ../../css/dark/adminlte-dark-addon.css, do not remove dist/css/adminlte.css or if usinf RTL version do not remove ../../css/rtl/adminlte.rtl.css-->
 <!-- ... and then the alternate CSS first as a snap-on for dark color scheme preference -->
 <!-- <link rel="stylesheet" href="../../css/dark/adminlte-dark-addon.css" media="(prefers-color-scheme: dark)""> -->
-
-<!-- overlayScrollbars -->
-<link rel="stylesheet" href="../../vendor/overlayScrollbars/css/OverlayScrollbars.min.css">
 
   </head>
   <body class="layout-fixed">
@@ -168,7 +175,7 @@
           </li>
           <!-- Menu Body -->
           <li class="user-body">
-            <section class="row">
+            <div class="row">
               <div class="col-4 text-center">
                 <a href="#">Followers</a>
               </div>
@@ -178,7 +185,7 @@
               <div class="col-4 text-center">
                 <a href="#">Friends</a>
               </div>
-            </section>
+            </div>
             <!-- /.row -->
           </li>
           <!-- Menu Footer-->
@@ -188,7 +195,8 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <!-- TODO tackel in v4.1 -->
+      <!-- <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
@@ -197,7 +205,7 @@
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -423,7 +431,7 @@
       <main class="content-wrapper">
         <div class="content-header">
           <div class="container-fluid">
-            <section class="row mb-2">
+            <div class="row mb-2">
               <div class="col-sm-6">
                 <div class="fs-3">Fixed Layout</div>
               </div>
@@ -433,13 +441,13 @@
                   <li class="breadcrumb-item active" aria-current="page">Fixed Layout</li>
                 </ol>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <section class="row">
+            <div class="row">
               <div class="col-12">
                 <!-- Default box -->
                 <div class="card">
@@ -466,7 +474,7 @@
                 </div>
                 <!-- /.card -->
               </div>
-            </section>
+            </div>
             <!-- /.row -->
           </div><!-- /.container-fluid -->
         </div>
@@ -487,11 +495,15 @@
     </div>
     <!--  ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
+    <!-- OPTIONAL SCRIPTS -->
+
 <!-- overlayScrollbars -->
-<script src="../../vendor/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/OverlayScrollbars.min.js" integrity="sha256-7mHsZb07yMyUmZE5PP1ayiSGILxT6KyU+a/kTDCWHA8=" crossorigin="anonymous"></script>
 <!-- Bootstrap 5 -->
-<script src="../../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=" crossorigin="anonymous"></script>
+
+<!-- REQUIRED SCRIPTS -->
+
 <!-- AdminLTE App -->
 <script src="../../js/adminlte.js"></script>
 
