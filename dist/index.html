@@ -15,10 +15,20 @@
 <meta name="color-scheme" content="light dark">
 <!-- By adding ./css/dark/adminlte-dark-addon.css then the page supports both dark color schemes, and the page author prefers / default is dark. -->
 <!-- <meta name="color-scheme" content="dark light"> -->
+
+<!-- OPTIONAL LINKS -->
+
 <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+<!-- overlayScrollbars -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css" integrity="sha256-WKijf8KI68sbq8Znd6yMepIuFF0wdWfIt6gk3JWcQfk=" crossorigin="anonymous">
+
 <!-- Font Awesome -->
-<link rel="stylesheet" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+
+<!-- REQUIRED LINKS -->
+
 <!-- Theme style -->
 <link rel="stylesheet" href="./css/adminlte.css">
 
@@ -28,9 +38,6 @@
 <!-- For dark mode use ./css/dark/adminlte-dark-addon.css, do not remove dist/css/adminlte.css or if usinf RTL version do not remove ./css/rtl/adminlte.rtl.css-->
 <!-- ... and then the alternate CSS first as a snap-on for dark color scheme preference -->
 <!-- <link rel="stylesheet" href="./css/dark/adminlte-dark-addon.css" media="(prefers-color-scheme: dark)""> -->
-
-<!-- overlayScrollbars -->
-<link rel="stylesheet" href="./vendor/overlayScrollbars/css/OverlayScrollbars.min.css">
 
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   </head>
@@ -169,7 +176,7 @@
           </li>
           <!-- Menu Body -->
           <li class="user-body">
-            <section class="row">
+            <div class="row">
               <div class="col-4 text-center">
                 <a href="#">Followers</a>
               </div>
@@ -179,7 +186,7 @@
               <div class="col-4 text-center">
                 <a href="#">Friends</a>
               </div>
-            </section>
+            </div>
             <!-- /.row -->
           </li>
           <!-- Menu Footer-->
@@ -189,7 +196,8 @@
           </li>
         </ul>
       </li>
-      <li class="nav-item">
+      <!-- TODO tackel in v4.1 -->
+      <!-- <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
@@ -198,7 +206,7 @@
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -424,7 +432,7 @@
       <main class="content-wrapper">
         <div class="content-header">
           <div class="container-fluid">
-            <section class="row mb-2">
+            <div class="row mb-2">
               <div class="col-sm-6">
                 <div class="fs-3">Dashboard</div>
               </div>
@@ -434,13 +442,13 @@
                   <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                 </ol>
               </div>
-            </section>
+            </div>
           </div>
         </div>
         <div class="content">
           <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
-            <section class="row">
+            <div class="row">
               <div class="col-lg-3 col-6">
                 <!-- small box -->
                 <div class="small-box bg-primary">
@@ -501,12 +509,12 @@
                 </div>
               </div>
               <!-- ./col -->
-            </section>
+            </div>
             <!-- /.row -->
             <!-- Main row -->
-            <section class="row">
+            <div class="row">
               <!-- Start col -->
-              <section class="col-lg-7">
+              <div class="col-lg-7">
                 <!-- Custom tabs (Charts with tabs)-->
                 <div class="card">
                   <div class="card-header">
@@ -741,9 +749,9 @@
                   <!-- /.card-footer-->
                 </div>
                 <!--/.direct-chat -->
-              </section>
+              </div>
               <!-- /.Start col -->
-            </section>
+            </div>
             <!-- /.row (main row) -->
           </div><!-- /.container-fluid -->
         </div>
@@ -763,18 +771,130 @@
     </div>
     <!--  ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
+    <!-- OPTIONAL SCRIPTS -->
+
 <!-- overlayScrollbars -->
-<script src="./vendor/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/OverlayScrollbars.min.js" integrity="sha256-7mHsZb07yMyUmZE5PP1ayiSGILxT6KyU+a/kTDCWHA8=" crossorigin="anonymous"></script>
 <!-- Bootstrap 5 -->
-<script src="./vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=" crossorigin="anonymous"></script>
+
+<!-- REQUIRED SCRIPTS -->
+
 <!-- AdminLTE App -->
 <script src="./js/adminlte.js"></script>
 
 
+    <!-- OPTIONAL SCRIPTS -->
+
     <!-- ChartJS -->
-    <script src="./vendor/chart.js/dist/chart.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="./assets/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js" integrity="sha256-7lWo7cjrrponRJcS6bc8isfsPDwSKoaYfGIHgSheQkk=" crossorigin="anonymous"></script>
+    <script>
+      // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
+      // IT'S ALL JUST JUNK FOR DEMO
+      // ++++++++++++++++++++++++++++++++++++++++++
+
+      /* Chart.js Charts */
+      // Sales chart
+      (function () {
+        'use strict'
+
+        var salesChartCanvas = document.querySelector('#revenue-chart-canvas').getContext('2d')
+
+        var salesChartData = {
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          datasets: [
+            {
+              label: 'Digital Goods',
+              backgroundColor: 'rgba(60,141,188,0.9)',
+              borderColor: 'rgba(60,141,188,0.8)',
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              pointColor: '#3b8bba',
+              pointStrokeColor: 'rgba(60,141,188,1)',
+              pointHighlightFill: '#fff',
+              pointHighlightStroke: 'rgba(60,141,188,1)',
+              data: [28, 48, 40, 19, 86, 27, 90]
+            },
+            {
+              label: 'Electronics',
+              backgroundColor: 'rgba(210, 214, 222, 1)',
+              borderColor: 'rgba(210, 214, 222, 1)',
+              fill: true,
+              tension: 0.4,
+              pointRadius: 0,
+              pointColor: 'rgba(210, 214, 222, 1)',
+              pointStrokeColor: '#c1c7d1',
+              pointHighlightFill: '#fff',
+              pointHighlightStroke: 'rgba(220,220,220,1)',
+              data: [65, 59, 80, 81, 56, 55, 40]
+            }
+          ]
+        }
+
+        var salesChartOptions = {
+          maintainAspectRatio: false,
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            xAxes: {
+              gridLines: {
+                display: false
+              }
+            },
+            yAxes: {
+              gridLines: {
+                display: false
+              }
+            }
+          }
+        }
+
+        // This will get the first returned node in the js collection.
+        var salesChart = new Chart(salesChartCanvas, { // lgtm[js/unused-local-variable]
+          type: 'line',
+          data: salesChartData,
+          options: salesChartOptions
+        })
+
+        // Donut Chart
+        var pieChartCanvas = document.querySelector('#sales-chart-canvas').getContext('2d')
+        var pieData = {
+          labels: [
+            'Instore Sales',
+            'Download Sales',
+            'Mail-Order Sales'
+          ],
+          datasets: [
+            {
+              data: [30, 12, 20],
+              backgroundColor: ['#f56954', '#00a65a', '#f39c12']
+            }
+          ]
+        }
+        var pieOptions = {
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          maintainAspectRatio: false,
+          responsive: true
+        }
+        // Create pie or douhnut chart
+        // You can switch between pie and douhnut using the method below.
+        // eslint-disable-next-line no-unused-vars
+        var pieChart = new Chart(pieChartCanvas, { // lgtm[js/unused-local-variable]
+          type: 'doughnut',
+          data: pieData,
+          options: pieOptions
+        })
+      })()
+
+    </script>
   </body>
 </html>
