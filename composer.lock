@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColorlibHQ/AdminLTE.git",
-                "reference": "b4b31e16a84d5131cabcb807919c2043d0ba47f3"
+                "reference": "dd4f1d7029910fe601e978f435725d32b48235c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/b4b31e16a84d5131cabcb807919c2043d0ba47f3",
-                "reference": "b4b31e16a84d5131cabcb807919c2043d0ba47f3",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/dd4f1d7029910fe601e978f435725d32b48235c8",
+                "reference": "dd4f1d7029910fe601e978f435725d32b48235c8",
                 "shasum": ""
             },
             "type": "library",
@@ -46,7 +46,7 @@
                 "issues": "https://github.com/ColorlibHQ/AdminLTE/issues",
                 "source": "https://github.com/ColorlibHQ/AdminLTE/tree/v4-dev"
             },
-            "time": "2021-10-10T15:18:39+00:00"
+            "time": "2021-12-12T14:50:53+00:00"
         }
     ],
     "packages-dev": [],
