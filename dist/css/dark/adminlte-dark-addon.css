@@ -130,7 +130,7 @@ caption {
   border-color: #515151;
 }
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: currentColor;
+  border-bottom-color: currentcolor;
 }
 
 .table-primary {
@@ -1692,7 +1692,7 @@ caption {
 }
 
 .placeholder {
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0.5;
 }
 
@@ -1769,7 +1769,7 @@ caption {
 }
 
 .vr {
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0.1;
 }
 

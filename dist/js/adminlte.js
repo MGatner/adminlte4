@@ -83,11 +83,6 @@
      * ------------------------------------------------------------------------
      */
     const CLASS_NAME_HOLD_TRANSITIONS = 'hold-transition';
-    const SELECTOR_SIDEBAR$1 = '.sidebar';
-    const Default$2 = {
-        scrollbarTheme: 'os-theme-light',
-        scrollbarAutoHide: 'leave'
-    };
     /**
      * Class Definition
      * ====================================================
@@ -95,7 +90,7 @@
     class Layout {
         constructor(element, config) {
             this._element = element;
-            this._config = { ...Default$2, ...config };
+            this._config = config;
         }
         holdTransition() {
             let resizeTimer;
@@ -109,23 +104,8 @@
         }
     }
     domReady(() => {
-        const data = new Layout(document.body, Default$2);
+        const data = new Layout(document.body, undefined);
         data.holdTransition();
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-expect-error
-        if (typeof OverlayScrollbars !== 'undefined') {
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-expect-error
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-            OverlayScrollbars(document.querySelectorAll(SELECTOR_SIDEBAR$1), {
-                className: Default$2.scrollbarTheme,
-                sizeAutoCapable: true,
-                scrollbars: {
-                    autoHide: Default$2.scrollbarAutoHide,
-                    clickScrolling: true
-                }
-            });
-        }
     });
 
     /**
@@ -294,7 +274,7 @@
      * ------------------------------------------------------------------------
      */
     domReady(() => {
-        const data = new PushMenu(null, null);
+        const data = new PushMenu(undefined, undefined);
         data.init();
         window.addEventListener('resize', () => {
             data.init();
@@ -308,7 +288,7 @@
                     button = button === null || button === void 0 ? void 0 : button.closest(SELECTOR_FULL_TOGGLE);
                 }
                 if (button) {
-                    const data = new PushMenu(button, null);
+                    const data = new PushMenu(button, undefined);
                     data.toggleFull();
                 }
             });
@@ -322,7 +302,7 @@
                     button = button === null || button === void 0 ? void 0 : button.closest(SELECTOR_FULL_TOGGLE);
                 }
                 if (button) {
-                    const data = new PushMenu(button, null);
+                    const data = new PushMenu(button, undefined);
                     data.toggleMini();
                 }
             });
@@ -362,9 +342,9 @@
         constructor(element, config) {
             var _a, _b;
             this._element = element;
+            this._config = { ...Default$1, ...config };
             this._navItem = (_a = this._element) === null || _a === void 0 ? void 0 : _a.closest(SELECTOR_NAV_ITEM);
             this._childNavItem = (_b = this._navItem) === null || _b === void 0 ? void 0 : _b.querySelector(SELECTOR_TREEVIEW_MENU);
-            this._config = { ...Default$1, ...config };
         }
         open() {
             const event = new CustomEvent(EVENT_EXPANDED);

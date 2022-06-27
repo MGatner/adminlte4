@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="title" content="AdminLTE 4 | Dashboard 2">
 <meta name="author" content="ColorlibHQ">
-<meta name="description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
+<meta name="description" content="AdminLTE is a Free Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS.">
 <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
 <!-- By adding ./css/dark/adminlte-dark-addon.css then the page supports both dark color schemes, and the page author prefers / default is light. -->
 <meta name="color-scheme" content="light dark">
@@ -71,7 +71,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link" data-bs-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
-          <span class="badge bg-danger navbar-badge">3</span>
+          <span class="navbar-badge badge bg-danger">3</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
           <a href="#" class="dropdown-item">
@@ -135,7 +135,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link" data-bs-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
-          <span class="badge bg-warning navbar-badge">15</span>
+          <span class="navbar-badge badge bg-warning">15</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
           <span class="dropdown-item dropdown-header">15 Notifications</span>
@@ -231,7 +231,7 @@
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Dashboard
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -260,7 +260,7 @@
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Widgets
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -291,7 +291,7 @@
             <p>
               Layout Options
               <span class="badge bg-info float-end me-3">6</span>
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -308,7 +308,7 @@
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Forms
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -325,7 +325,7 @@
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Tables
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -349,7 +349,7 @@
             <i class="nav-icon fas fa-circle"></i>
             <p>
               Level 1
-              <i class="end fas fa-angle-left"></i>
+              <i class="end fas fa-angle-right"></i>
             </p>
           </a>
           <ul class="nav nav-treeview">
@@ -364,7 +364,7 @@
                 <i class="nav-icon far fa-circle"></i>
                 <p>
                   Level 2
-                  <i class="end fas fa-angle-left"></i>
+                  <i class="end fas fa-angle-right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
@@ -1256,6 +1256,28 @@
 
 <!-- AdminLTE App -->
 <script src="./js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+
+<script>
+  const SELECTOR_SIDEBAR = '.sidebar'
+  const Default = {
+    scrollbarTheme: 'os-theme-light',
+    scrollbarAutoHide: 'leave'
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof OverlayScrollbars !== 'undefined') {
+      OverlayScrollbars(document.querySelectorAll(SELECTOR_SIDEBAR), {
+        className: Default.scrollbarTheme,
+        sizeAutoCapable: true,
+        scrollbars: {
+          autoHide: Default.scrollbarAutoHide,
+          clickScrolling: true
+        }
+      })
+    }
+  })
+</script>
 
 
     <!-- OPTIONAL SCRIPTS -->
